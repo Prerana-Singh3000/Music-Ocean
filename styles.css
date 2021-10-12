@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Poppins:ital@1&family=Varela+Round&display=swap');
+
+body{
+    background-color:beige;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Poppins', sans-serif;
+    color: beige;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: rgba(10, 10, 10, 0.863);
+}
+nav ul li{
+    padding: 0 14px;
+}
+.logo img{
+    width: 59px;
+    padding: 0 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 2.3rem;
+}
+.container{
+    min-height: 72vh;
+    background-color: rgba(10, 10, 10, 0.863);
+    color: beige;
+    display: flex;
+    margin: 24px auto;
+    width: 75%;
+    border-radius: 12px;
+    padding: 24px;
+    background-image: url('img/bg6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.playBar{
+    position: sticky;
+    height: 130px;
+    background-color: rgba(10, 10, 10, 0.863);
+    color: blanchedalmond;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 18px;
+}
+#progressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.songItemContainer{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    margin-top: 72px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: bisque;
+    width: 100%;
+    color: black;
+    border-radius: 34px;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.songItem img{
+    width: 42px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+.timeStamp{
+    margin: 0 5px 0 18px;
+}
+.songListPlay i{
+    cursor: pointer;
+    padding-right: 10px;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
